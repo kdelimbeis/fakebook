@@ -1,0 +1,34 @@
+<body class="myspace">
+
+<form action="/logout" method="post">
+	<input type="submit"value="Logout">
+</form>
+
+<form action="/blog" method="post">
+<div>
+<p class="profile">What's your name:</p>
+<%= @user.username %>
+</div>
+
+<div>
+<p class="profile">What city you rep:</p>
+<%= @user.city %>
+</div>
+
+<div>
+<p class="profile">Last school:</p>
+<%= @user.school %>
+</div>
+
+</form>
+
+<form action="/profile" method="post">
+<p class="toblog">What's on your mind??</p>
+		<input type="text" name="title"
+		placeholder = "Title">
+		<input type="text" name="category"
+		placeholder="Category">	
+		<input type="text" name="content"
+		placeholder="Content">
+		<input type="submit">
+</form>

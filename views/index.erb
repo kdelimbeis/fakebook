@@ -1,0 +1,16 @@
+<body class="index">
+
+<form action="/logout" method="post">
+	<input type="submit"value="Logout">
+</form>
+
+
+<% @blogs.each do |blog| %>
+
+<div class="title"><%= blog.title %></div>
+<div class="category"><%= blog.category %></div>
+<div class="content"><%= blog.content %></div>
+<div><%= blog.user_id %></div>
+
+<% end %>
+

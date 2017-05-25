@@ -1,0 +1,51 @@
+.myspace {
+  background-image: url("../img/socialmedia.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.profile {
+  font-size: 20px;
+  color: orange; }
+
+.toblog {
+  font-size: 40px; }
+
+.index {
+  background-image: url("../img/blog.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.title {
+  font-size: 50px;
+  font-style: italic; }
+
+.category {
+  font-size: 35px;
+  font-style: oblique; }
+
+.content {
+  font-size: 20px;
+  font-style: normal; }
+
+.login {
+  background-image: url("../img/security.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.sign {
+  color: yellow; }
+
+.success {
+  background-image: url("../img/success.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.wrong {
+  background-image: url("../img/incorrect-password.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.incorrect {
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */
