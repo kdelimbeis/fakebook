@@ -1,9 +1,26 @@
-<body class="index">
+<body class="myspace">
 
 <form action="/logout" method="post">
 	<input type="submit"value="Logout">
 </form>
 
+<form>
+<div>
+<p class="profile">What's your name:</p>
+<%= @user.username %>
+</div>
+
+<div>
+<p class="profile">What city you rep:</p>
+<%= @user.city %>
+</div>
+
+<div>
+<p class="profile">Last school:</p>
+<%= @user.school %>
+</div>
+
+</form>
 
 <% @blogs.each do |blog| %>
 
@@ -14,4 +31,3 @@
 
 
 <% end %>
-

@@ -12,15 +12,9 @@ get '/' do
  	erb :index
 end
 
-get '/profile' do
-	@user = User.find(session[:user_id])
-	@blogs = @user.blogs
-	erb :index
-end
-
 post '/profile' do
 	user = User.find(session[:user_id])
-	Blog.create(title: params[:title], category: params[:category], content: params[:content])
+	Blog.create(title: params[:title], category: params[:category], content: params[:content], user_id: user.id)
 	redirect "/"	
 end
 
@@ -61,3 +55,29 @@ post '/logout' do
 	redirect '/login'
 end
 
+get '/user28' do
+	@user = User.find(28)
+	@blogs = Blog.where(user_id: params[:user_id]=28)
+	erb :user28
+end
+get '/user29' do
+	@user = User.find(29)
+	@blogs = Blog.where(user_id: params[:user_id]=29)
+	erb :user29
+end
+get '/user30' do
+	@user = User.find(30)
+	@blogs = Blog.where(user_id: params[:user_id]=30)
+	erb :user30
+end
+get '/user31' do
+	@user = User.find(31)
+	@blogs = Blog.where(user_id: params[:user_id]=31)
+	erb :user31
+end
+
+get '/user32' do
+	@user = User.find(32)
+	@blogs = Blog.where(user_id: params[:user_id]=32)
+	erb :user32
+end
