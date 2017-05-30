@@ -55,6 +55,18 @@ post '/logout' do
 	redirect '/login'
 end
 
+post '/destroy_user' do
+	user = User.find(session[:user_id])
+	user.destroy
+	redirect '/login'
+end
+
+post '/edit_user' do
+	user = User.find(session[:user_id])
+	user.update(password: params[:password], city: params[:city], school: params[:school])
+	redirect '/myspace'
+end
+
 get '/user28' do
 	@user = User.find(28)
 	@blogs = Blog.where(user_id: params[:user_id]=28)

@@ -1,7 +1,11 @@
 <body class="myspace">
 
 <form action="/logout" method="post">
-	<input type="submit"value="Logout">
+	<input type="submit" value="Logout">
+</form>
+
+<form action="/destroy_user" method="post">
+	<input type="submit" value="Delete your account">
 </form>
 
 <div>
@@ -14,6 +18,13 @@
 	</ul>
 </div>
 
+<form action="/edit_user" method="post">
+<p class="toblog">Want to edit your account?</p>
+	<input type="text" name="password" placeholder="Password">
+	<input type="text" name="city"	placeholder="city">
+	<input type="text" name="school" placeholder="school">
+	<input type="submit" />
+</form>
 
 <div>
 <p class="profile">What's your name:</p>
