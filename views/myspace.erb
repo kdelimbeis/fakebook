@@ -9,13 +9,7 @@
 </form>
 
 <div>
-	<ul>
-	  <li><a href="/user28">Jeff</a></li>
-	  <li><a href="/user29">Greg</a></li>
-	  <li><a href="/user30">Laz</a></li>
-	  <li><a href="/user31">Chris</a></li>
-	  <li><a href="/user32">Alex</a></li>
-	</ul>
+	<a href="/users" style="background-color: beige">Go to all users</a>
 </div>
 
 <form action="/edit_user" method="post">
@@ -28,7 +22,7 @@
 
 <div>
 <p class="profile">What's your name:</p>
-<%= @user.username %>
+<%= @user.username %> <%= @user.id %>
 </div>
 
 <div>
@@ -46,7 +40,8 @@
 <form action="/profile" method="post">
 <p class="toblog">What's on your mind??</p>
 		<input type="text" name="title"
-		placeholder = "Title">
+		placeholder = "Title" >
+		
 		<input type="text" name="category"
 		placeholder="Category">	
 		<input type="text" name="content"

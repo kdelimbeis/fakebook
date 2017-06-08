@@ -1,4 +1,4 @@
-.myspace {
+.myspace, .users {
   background-image: url("../img/socialmedia.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
@@ -10,7 +10,7 @@
 .toblog {
   font-size: 40px; }
 
-.index {
+.index, .user {
   background-image: url("../img/blog.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
